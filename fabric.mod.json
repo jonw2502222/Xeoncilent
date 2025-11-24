@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "xeonclient",
+  "version": "1.0-SNAPSHOT",
+  "name": "XeonClient",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/xeonclient/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.test.xeonclient.client.XeonclientDataGenerator"
+    ],
+    "client": [
+      "org.test.xeonclient.client.XeonclientClient"
+    ],
+    "main": [
+      "org.test.xeonclient.Xeonclient"
+    ]
+  },
+  "mixins": [
+    "xeonclient.mixins.json",
+    {
+      "config": "xeonclient.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "fabric": "*",
+    "minecraft": "1.21.4"
+  }
+}
