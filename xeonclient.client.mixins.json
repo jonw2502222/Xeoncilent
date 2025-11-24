@@ -1,0 +1,23 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "org.test.xeonclient.client.mixin",
+  "refmap": "client-xeonclient.client.refmap.json",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClientPlayNetworkHandlerMixin",
+    "KeyboardMixin",
+    "ClientPlayerEntityMixin",
+    "InGameHudMixin",
+    "ESPMixin",
+    "WorldRenderMixin",
+    "ResourcePackMixin",
+    "TitleScreenMixin",
+    "CrystalPlaceMixin",
+    "MultiplayerScreenMixin",
+    "BlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
